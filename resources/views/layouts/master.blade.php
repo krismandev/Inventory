@@ -63,7 +63,7 @@
                       <li><a href="{{route('getBarang')}}">Data Barang</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-edit"></i> Supplier <span class="fa fa-chevron-down"></span></a>
+                  <li><a href="{{route('getSupplier')}}"><i class="fa fa-edit"></i> Supplier</a>
                   </li>
                   <li><a><i class="fa fa-desktop"></i> Pemesanan Barang <span class="fa fa-chevron-down"></span></a>
                   </li>

@@ -35,6 +35,14 @@ Route::group(['middleware' => ['auth']],function(){
         Route::get('/','BarangController@getBarang')->name('getBarang');
         Route::post('/','BarangController@storeBarang')->name('storeBarang');
         Route::patch('/','BarangController@updateBarang')->name('updateBarang');
+        Route::get('/delete/{id}','BarangController@deleteBarang')->name('deleteBarang');
+    });
+
+    Route::group(['prefix' => 'supplier'],function(){
+        Route::get('/','SupplierController@getSupplier')->name('getSupplier');
+        Route::post('/','SupplierController@storeSupplier')->name('storeSupplier');
+        Route::patch('/','SupplierController@updateSupplier')->name('updateSupplier');
+        Route::get('/delete/{id}','SupplierController@deleteSupplier')->name('deleteSupplier');
     });
 
 });

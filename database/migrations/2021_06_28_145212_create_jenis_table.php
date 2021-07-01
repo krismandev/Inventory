@@ -16,6 +16,7 @@ class CreateJenisTable extends Migration
         Schema::create('jenis', function (Blueprint $table) {
             $table->smallIncrements('id');
             $table->string('nama_jenis');
+            $table->date('deleted_at')->nullable();
             $table->timestamps();
         });
     }

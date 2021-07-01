@@ -18,6 +18,7 @@ class CreateSuppliersTable extends Migration
             $table->string('nama');
             $table->string('alamat');
             $table->string('kontak');
+            $table->date('deleted_at')->nullable();
             $table->timestamps();
         });
     }

@@ -20,8 +20,9 @@ class CreateBarangsTable extends Migration
             $table->smallInteger('jenis_id');
             $table->integer('harga_beli');
             $table->integer('harga_jual');
-            $table->smallInteger('stok');
+            $table->smallInteger('stok')->nullable();
             $table->smallInteger('stok_minimal');
+            $table->date('deleted_at')->nullable();
             $table->timestamps();
         });
     }
